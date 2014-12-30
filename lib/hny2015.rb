@@ -1,10 +1,6 @@
 require "hny2015/version"
 
 module Hny2015
-  # Your code goes here...
-end
-
-class Hny2015
   BIG_SHEEP = "\u{1F40F}\n" #大きな羊
   SMALL_SHEEP = "\u{1F411}\n" #小さな羊
 
