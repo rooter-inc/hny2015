@@ -32,7 +32,7 @@ class HNY2015
     printf("\033[%d;%dH", get_lines,0) #カーソル位置も左下に
   end
 
-  def animation(num=2015)
+  def animation(num=10)
     printf("\e[?25l");  #カーソルを隠す
     1.upto(num).each {|count|
       jump_sheep(count)
@@ -83,6 +83,3 @@ class HNY2015
       end
     end
 end
-
-hny = HNY2015.new
-hny.animation(1)
