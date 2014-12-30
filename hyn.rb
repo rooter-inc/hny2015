@@ -30,7 +30,7 @@ def 練習
   end
 end
 
-#練習
+# 練習
 
 def アニメの練習
   x = (get_cols).to_i
@@ -86,7 +86,7 @@ def 変換のアニメーションをやってみる
   printf("\033[%d;%dH", get_lines,0) #カーソル位置も左下に
 end
 
-#変換のアニメーションをやってみる
+# 変換のアニメーションをやってみる
 
 def jump_sheep(sheep_count)
   x = get_cols.to_i
@@ -124,6 +124,7 @@ def jump_sheep(sheep_count)
 end
 
 def 羊が複数
+  printf("\e[?25l");  #カーソルを隠す
   1.upto(100).each {|count|
     jump_sheep(count)
   }
