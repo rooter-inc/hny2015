@@ -11,6 +11,8 @@ Enjoy sheep jumping.
 
 ## How it work
 
+    sudo gem install hny2015
+
     include "hny.rb"
     require HNY2015
 
