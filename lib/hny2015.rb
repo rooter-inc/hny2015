@@ -1,9 +1,6 @@
 require "hny2015/version"
 
 class Hny2015
-  BIG_SHEEP = "\u{1F40F}\n" #大きな羊
-  SMALL_SHEEP = "\u{1F411}\n" #小さな羊
-
   def message
     x = (get_cols / 2 ).to_i - 3
     y = (get_lines / 2 ).to_i 
@@ -64,7 +61,7 @@ class Hny2015
 
   def play
     message
-    sleep 3
+    sleep 2
     animation
   end
 
