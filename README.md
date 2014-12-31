@@ -1,9 +1,11 @@
 # Happy New Year 2015 - New Year's Greetings From ROOTER
 
-![](images/sheep.jpg)
+![](images/sheep.png)
 
-New Year's Greetings From ROOTER.
-Enjoy sheep jumping.
+New Year's Greetings From ROOTER.  
+Sheep jumping may help you sleep well.
+
+Enjoy!
 
 
 ## Demo
