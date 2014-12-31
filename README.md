@@ -18,6 +18,15 @@ Enjoy!
 (It may work under lower ruby versions, but there is no guarantee for them.)
 
 
+## Quick Play
+For those who are in a hurry, just try this.
+
+  git clone git@github.com:rooter-inc/hny2015
+  ruby hny2015/lib/sample.rb
+
+Easy!
+
+
 ## How it work
 ### install
 Add this to your gem file:
