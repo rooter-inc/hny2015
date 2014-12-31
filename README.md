@@ -1,8 +1,8 @@
-# Happy New Year 2015 - New Year's Greetings From ROOTER
+# Happy New Year 2015 - New Year's Greetings From ROOTER,Inc.
 
 ![](images/sheep.png)
 
-New Year's Greetings From ROOTER.  
+New Year's Greetings From ROOTER,Inc.  
 Sheep jumping may help you sleep well.
 
 Enjoy!
@@ -21,8 +21,8 @@ Enjoy!
 ## Quick Play
 For those who are in a hurry, just try this.
 
-  git clone git@github.com:rooter-inc/hny2015
-  ruby hny2015/lib/sample.rb
+    git clone git@github.com:rooter-inc/hny2015
+    ruby hny2015/lib/sample.rb
 
 Easy!
 
