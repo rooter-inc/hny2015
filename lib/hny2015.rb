@@ -12,9 +12,32 @@ class Hny2015
     ary_henkan.push({"u"=>"あけまして"})
     ary_henkan.push({"u"=>"あけましておめでとうございなす"})
     ary_henkan.push({"u"=>"あけましておめでとうござい"})
-    ary_henkan.push({"u"=>"あけましておめでとうございます"})
-    ary_henkan.push({"r"=>"明けまして","u"=>"おめでとうございます"})
-    ary_henkan.push({"n"=>"明けましておめでとうございます"})
+    ary_henkan.push({"u"=>"あけましておめでとうございます。"})
+    ary_henkan.push({"r"=>"明けまして","u"=>"おめでとうございます。"})
+    ary_henkan.push({"n"=>"明けましておめでとうございます。"})
+    ary_henkan.each {|line|
+      puts "\e[H\e[2J" #毎回消す
+      line.each {|mode,value|
+        print("\x1b[0m"); #元に戻す
+        if mode == "u"
+          print("\x1b[4m");
+        elsif mode == "r"
+          print("\x1b[7m");
+        end
+        print value
+      }
+      sleep(0.5)
+    }
+
+    x = (get_cols / 2 ).to_i - 3
+    y = (get_lines / 2 ).to_i
+    printf("\x1b[%d;%dH" , y,x)
+    ary_henkan = []
+    ary_henkan.push({"u"=>"ROOTERは"})
+    ary_henkan.push({"u"=>"ROOTERはことしも"})
+    ary_henkan.push({"u"=>"ROOTERは", "r"=>"今年も"})
+    ary_henkan.push({"u"=>"ROOTERは今年もがんばります！"})
+    ary_henkan.push({"u"=>"ROOTERは今年もがんばります！\u{1F411}"})
     ary_henkan.each {|line|
       puts "\e[H\e[2J" #毎回消す
       line.each {|mode,value|
@@ -32,11 +55,17 @@ class Hny2015
     printf("\033[%d;%dH", get_lines,0) #カーソル位置も左下に
   end
 
-  def animation(num=10)
+  def animation(num=2015)
     printf("\e[?25l");  #カーソルを隠す
     1.upto(num).each {|count|
       jump_sheep(count)
     }
+  end
+
+  def play
+    message
+    sleep 3
+    animation
   end
 
   private
